@@ -1,0 +1,483 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  
+   overflow-x: hidden;  
+}
+
+
+
+/*styling navbar */
+
+
+img{
+    width: 300px;
+    height: 50px;
+    float: left;
+    margin-left: 70px;
+    
+}
+.nav-bar {
+    background-color: rgb(53, 53, 243);
+    text-align: center;
+    width: 100%; 
+    
+}
+
+.nav-bar ul{
+    list-style: none;
+    color: #fff;
+    padding-right: 35px;
+    
+    
+    
+}
+ .li-div{
+   
+    padding-right: 200px;
+    padding-left: 0;
+}
+.nav-bar ul li{
+    display: inline-block;
+    width: 150px;
+    margin: 10px;
+   
+    padding: 10px;
+    
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+      
+}
+.nav-bar ul li.active{
+    background-color: lightgray;
+    border-radius: 5px;
+}
+.nav-bar ul li:hover{
+    background-color: lightgray;
+    border-radius: 5px;
+    
+}
+
+
+
+/*Styling about page */
+
+
+
+.grid-container1{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 90px  250px;
+    grid-template-areas:" about1 . . ." "about2 about3 . ." ;
+    height: 350px;  
+}
+.grid-item-1{
+    grid-area: about1;
+    font-size: 20px;
+    background-color: lightgreen;
+    
+}
+.grid-item-2{
+    grid-area: about2; 
+    background-color: lightpink; 
+    display: flex; 
+    flex-wrap: wrap;
+}
+.grid-item-3{
+    grid-area: about3; 
+    background-color: rgb(182, 250, 255); 
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.fa-id-card{
+    padding-top: 8px;
+    margin-right: 5px;
+}
+.grid-item-1{
+    padding-top: 20px;
+    padding-left: 30px; 
+    
+    text-align: center;
+    font-size: 25px; 
+}
+.grid-item-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 200px;
+}
+.grid-item-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+}
+    
+
+
+
+
+
+/*styling Login page */
+
+
+
+.grid-container2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 80px  250px;
+    grid-template-areas:". log1 . ." ". log2 . .";
+    height: 100%; 
+   
+}
+
+.grid-log1{
+    grid-area: log1;
+    font-size: 30px;
+    padding-top: 30px; 
+    background-color: lightcyan;
+     
+}
+.fa-lock{
+    padding-right: 8px;
+}
+.grid-log2{
+    grid-area: log2;
+    font-size: 18px;
+    padding-top: 50px;
+    background-color: lemonchiffon;
+}
+.password{
+    border-radius: 3px;
+    border: solid 1px gray;
+    border-left: solid 5px brown;
+    text-align: left;
+}
+.text{
+    margin-left: 2px;
+    border-radius: 3px;
+    border: solid 1px gray;
+    border-left: solid 5px brown;
+}
+
+
+.but{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: lightgreen;
+    border-radius: 5px;
+    border: solid 1px white;
+    color: white;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+/*Styling order page */
+
+
+
+.grid-container3{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 90px  300px;
+    grid-template-areas:"order1 . . ." " order2 order2 . ." ;
+    height: 400px;  
+}
+
+.grid-order-1{
+    grid-area: order1;
+    font-size: 30px;
+    padding-top: 25px;
+    padding-left: 20px; 
+    background-color: lightgreen; 
+    text-align: center; 
+}
+.grid-order-2{
+    grid-area: order2;
+    
+    background-color: lightpink;
+    padding-left: 150px;
+   
+}
+.table-style{
+    border-collapse: collapse;
+    margin-left: 60px;  
+}
+.line{
+    border-top: solid 2px;
+}
+
+
+
+
+
+/* styling customers page */
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 1fr;
+    grid-template-rows: 70px  80px;
+    grid-template-areas: " . cust1  . ." " . cust2 . cust3" ;
+    height: 600px;  
+}
+.grid-cust1{
+    display: flex;
+    grid-area: cust1;
+    font-size: 30px;
+    padding-top: 25px;
+    text-align: left;
+    background-color: lightgreen;
+}
+.grid-cust2{
+    grid-area: cust2;
+    display: inline-flex;
+   padding-left: 70px;
+   padding-top:  15px;
+    background-color: lightpink;
+    
+    
+}
+.grid-cust2 a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: gray;
+    
+}
+.grid-cust3{
+    background-color: lightgoldenrodyellow;
+    flex-wrap: wrap;
+    grid-area: cust3;
+    
+}
+.grid-cust2 a:hover{
+    background-color: none;
+    color: #000;
+}
+
+
+                      
+
+
+
+/* styling newcustomedetails page */
+
+
+.grid-container4{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 50px  60px;
+    grid-template-areas: " newcust1 . . ." " newcust2 . . ." " newcust3 newcust3 . ." ;
+    height: 100vh;  
+}
+.grid-newcust1{
+    grid-area: newcust1;
+}
+.grid-newcust2{
+    grid-area: newcust2;
+    display: inline-flex;  
+}
+.grid-newcust2 a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: gray;
+}
+.grid-newcust3{
+    grid-area: newcust3;
+}
+.active1, .grid-newcust2 a:hover{
+    background-color: none;
+    color: #000;
+}
+.grid-newcust3{
+    grid-area: newcust3;
+    text-align: center;
+}
+.input-style{
+    
+    border-radius: 5px;
+    border: solid 1px gray;
+    border-left: solid 5px brown;
+    padding: 5px 80px 5px 2px;
+}
+.color1{
+    width: 250px;
+}
+
+
+
+
+
+
+
+
+/* styling customedetailsCardLayout page */
+
+.grid-container5{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 50px  60px 125px 30px 125px;
+    grid-template-areas: " cust-card1 . . ." " cust-card2 . . cust-card3" ". cust-card4 cust-card4 cust-card4";
+    height: 400px;  
+}
+.grid-cust-card1{
+    grid-area: cust-card1;
+}
+.grid-cust-card2{
+    grid-area: cust-card2;
+    display: inline-flex;
+    background-color: lightpink;
+}
+.grid-cust-card2 a{
+    text-decoration: none;
+    color: gray;
+    margin-right: 20px;
+}
+.grid-cust-card3{
+    grid-area: cust-card3;
+    background-color: lightblue;
+}
+.grid-cust-card4{
+    grid-area: cust-card4;
+    background-color: lightgreen;
+    display: flex;
+    justify-content: space-around;
+   
+}
+.grid-cust-card2 :hover{
+    background-color: none;
+    color: #000;
+}
+.card-header{
+    background-color: rgb(93, 93, 251);
+}
+
+
+
+
+ 
+
+
+
+/* styling Customerdetailslistlayout page */
+
+.grid-container6{
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 1fr;
+    grid-template-rows: 70px  80px 300px;
+    grid-template-areas: ". cust-list1  . ." " . cust-list2 . cust-list3" " . cust-list4 cust-list4 cust-list4 " ;
+    height: 100vh;  
+}
+.grid-cust-list1{
+    grid-area: cust-list1;
+    background-color: lightgreen;
+    font-size: 30px;
+    padding-top: 25px;
+    text-align: left;
+}
+.grid-cust-list2{
+    grid-area: cust-list2;
+    display: inline-flex;
+    background-color: lightpink;
+    padding-top: 15px;
+    padding-left: 70px;
+}
+.grid-cust-list3{
+    grid-area: cust-list3; 
+    background-color: lightyellow;   
+}
+.grid-cust-list4{
+    grid-area: cust-list4; 
+    background-color: lightslategray;
+}
+.grid-cust-list2 a{
+    text-decoration: none;
+    color: gray;
+    margin-right: 20px;
+}
+.grid-cust-list2 :hover{
+    background-color: none;
+    color: #000;
+}
+.table-list{
+    border-collapse: collapse;
+    width: 70%;
+    text-align: left;
+    height: 300px;
+}
+.table-list tr:nth-of-type(even){
+    background-color: whitesmoke;
+    border-top: solid lightgray 2px;
+    border-bottom: solid lightgray 2px;
+}
+.table-list tr td a{
+    text-decoration: none;
+}
+.cust-img{
+    height: 50px;
+    width: 50px;
+}
+
+
+
+
+/* styling allcustomerdetails page */
+
+
+
+.grid-container7{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 50px  60px 300px;
+    grid-template-areas: "all-cust1 . . ." " all-cust2 . . ." " all-cust3  . . ." ;
+    height: 100vh;  
+}
+.grid-all-cust1{
+    grid-area: all-cust1;
+}
+.grid-all-cust2{
+    grid-area: all-cust2;
+}
+.grid-all-cust3{
+    grid-area: all-cust3;
+    display: flex;
+    justify-content: space-around;
+}
+.container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.container1 a{
+    text-decoration: none;
+    color: rgb(72, 72, 243);
+}
+.in-container1{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.in-container1 text{
+    margin-top: 45px;
+    font-size: 22px;
+}
+.in-container1 p{
+    margin-top: 40px;
+}
+.all-cust-img{
+    height: 100px;
+    width: 100px;
+}
+
