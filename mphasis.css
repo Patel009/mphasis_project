@@ -415,7 +415,7 @@ img{
     flex-direction: row;
     justify-content: space-around;
 }
-.fa-pen-to-square{
+.pen-log{
     font-size: 20px;
     float: right;
     margin-top: 3px;
