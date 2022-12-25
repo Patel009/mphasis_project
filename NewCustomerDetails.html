@@ -47,35 +47,39 @@
                       <form>
                       
                          <label for="first-name">First Name</label><br>
-                         <input class="input-style" id="first-name" placeholder="Enter First Name" type="text"><br>
+                         <input class="input-style" id="first-name" placeholder="Enter First Name" type="text" required><br>
                        
                          <label for="last-name">Last Name</label><br>
-                         <input class="input-style" id="last-name" placeholder="Enter Last Name" type="text"><br>
+                         <input class="input-style" id="last-name" placeholder="Enter Last Name" type="text" required><br>
                         
                          <label for="email">Email</label><br>
-                         <input  class="input-style" id="email" placeholder="Enter Email" type="text"><br>
+                         <input  class="input-style" id="email" placeholder="Enter Email" type="text" required><br>
                         
-                         <input type="checkbox" data-bind="checked":params.availToStream checked><br>
+                         <label for="mobile">Mobile</label><br>
+                         <input  class="input-style" id="mobile" placeholder="Enter Mobile" type="text" required><br>
+
+                         <input  type="checkbox" data-bind="checked":params.availToStream checked><br>
                         
                          <label for="dob">DOB</label><br>
-                         <input id="dob"  type="date" ><br>
+                         <input id="dob"  type="date" required style="padding-right: 74px;" class="input-style1" ><br>
+                         
                         
                          <label for="Favourate-color">Favourate Color</label><br>
-                         <input class="color1" id="Favourate-color"type="color"><br>
+                         <input id="Favourate-color" type="color" required class="color1" ><br>
                         
                          <label for="address">Address</label><br>
-                         <input class="input-style" id="address" placeholder="Enter Address" type="text"><br>
+                         <textarea  id="address"  class="input-style1" style="width: 185px;" required>Enter Address </textarea><br>
                          
                            <label for="city">City</label><br>
-                           <select name="City" id="City">
-                            <option value="sc">Select City</option>
+                           <select name="City" id="City" required style="padding-right: 102px;" class="input-style1">
+                            <option value="">Select City</option>
                             <option value="India">India</option>
                             <option value="USA">USA</option>
                            </select><br>
                         
-                           <label for="city">State</label><br>
-                           <select name="State" id="State">
-                            <option value="sc">Select City</option>
+                           <label for="state">State</label><br>
+                           <select name="State" id="State" required style="padding-right: 55px;" class="input-style1">
+                            <option value="">Select City</option>
                             <option value="Ap">Andhra Pradesh</option>
                             <option value="Arp">Arunachal Pradesh</option>
                             <option value="As">Assam</option>
@@ -103,20 +107,18 @@
                             <option value="Arp">UttaraKhand</option>
                             <option value="Arp">Uttar Pradesh</option>
                             <option value="Arp">West Bengal</option>
-                            <option value="Arp">Select City</option>
-
-                           </select><br>
+                    </select><br>
                         
                            <label for="Country">Country</label><br>
-                           <select name="Country" id="Country">
-                            <option value="sc">Select Country</option>
+                           <select name="Country" id="Country" required style="padding-right: 80px;" class="input-style1">
+                            <option value="">Select Country</option>
                             <option value="India">India</option>
                             <option value="USA">USA</option>
                            </select><br>
                         
                       
-                           <button>Cancel</button>
-                           <button>Insert</button>
+                           <input type="reset" value="Cancel">
+                           <input type="submit" value="Insert">
                      </form>
                       
                     </div>
