@@ -9,9 +9,9 @@
        </head>
            <body>
             
-              
+            
                 
-                <div>
+              <!--- <div>
                     <div class="logo">
                         <img src="logo.png">
                     </div>
@@ -29,8 +29,8 @@
                          </ul>
                          
                     </nav>
-                </div>
-                <div class="grid-container4">
+                </div>-->
+              <div class="grid-container4">
                     
                     <div class="grid-newcust1">
                             <p><i class="fa-solid fa-user"></i>&#160Customer Information</p>
@@ -40,9 +40,9 @@
                        <a href="order.html"><i class="fa fa-tags" aria-hidden="true"></i>&#160Customer Orders</a>
                        <a style="color: black;" href="NewCustomerDetails.html"><i class="fa-solid fa-pen-to-square"></i>&#160Edit Customer</a>
   
-                    </div>
+                    </div> 
                     
-                         
+                        
                     <div class="grid-newcust3">
                       <form>
                       
@@ -56,29 +56,29 @@
                          <input  class="input-style" id="email" placeholder="Enter Email" type="text" required><br>
                         
                          <label for="mobile">Mobile</label><br>
-                         <input  class="input-style" id="mobile" placeholder="Enter Mobile" type="text" required><br>
+                         <input  class="input-style" id="mobile" placeholder="Enter Mobile" type="text" minlength="10" maxlength="10" required><br>
 
-                         <input  type="checkbox" data-bind="checked":params.availToStream checked><br>
+                         <input  type="checkbox" data-bind="checked":params.availToStream checked><label>Subscribe to get notification from Eshopper?</label><br><br>
                         
                          <label for="dob">DOB</label><br>
-                         <input id="dob"  type="date" required style="padding-right: 74px;" class="input-style1" ><br>
+                         <input id="dob"  type="date" required  class="input-style1" ><br>
                          
                         
                          <label for="Favourate-color">Favourate Color</label><br>
-                         <input id="Favourate-color" type="color" required class="color1" ><br>
+                         <input id="Favourate-color" type="color" class="color1" required><br>
                         
                          <label for="address">Address</label><br>
-                         <textarea  id="address"  class="input-style1" style="width: 185px;" required>Enter Address </textarea><br>
+                         <textarea class="text-add" id="address" required>Enter Address </textarea><br>
                          
                            <label for="city">City</label><br>
-                           <select name="City" id="City" required style="padding-right: 102px;" class="input-style1">
+                           <select name="City" id="City"class="input-style1" required>
                             <option value="">Select City</option>
                             <option value="India">India</option>
                             <option value="USA">USA</option>
                            </select><br>
                         
                            <label for="state">State</label><br>
-                           <select name="State" id="State" required style="padding-right: 55px;" class="input-style1">
+                           <select name="State" id="State"  class="input-style1" required>
                             <option value="">Select City</option>
                             <option value="Ap">Andhra Pradesh</option>
                             <option value="Arp">Arunachal Pradesh</option>
@@ -110,7 +110,7 @@
                     </select><br>
                         
                            <label for="Country">Country</label><br>
-                           <select name="Country" id="Country" required style="padding-right: 80px;" class="input-style1">
+                           <select name="Country" id="Country" class="input-style1" required >
                             <option value="">Select Country</option>
                             <option value="India">India</option>
                             <option value="USA">USA</option>
